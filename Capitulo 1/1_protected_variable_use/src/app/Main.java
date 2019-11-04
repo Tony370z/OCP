@@ -16,11 +16,13 @@ public class Main extends Carlos{
 
 	public static void main(String[] args) {
 		
-		Main m = new Main();
 		Ana ana = new Ana();
+		Main m = new Main();
 		Carlos carlos = new Carlos();
+		Maria maria = new Maria();
 		
-		System.out.println("Ana same package " + ana.name);
+		System.out.println("Ana same package " + ana.name);//Same package. Super Class
+		System.out.println(maria.name);//Same package. Sub Class
 		m.print();
 		System.out.println("Carlos by inheritance" + m.lastName); //It works this way
 		System.out.println("Carlos same package " + carlos.lastName); //It does not work
